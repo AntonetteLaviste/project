@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom left, #333, #000);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        form {
+            width: 400px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom left, #111, #000);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form id="registrationForm" action="second_page.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="facebook">Facebook:</label>
+        <input type="text" id="facebook" name="facebook" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality" required>
+            <option value="select">Select nationality</option>
+            <option value="filipino">Filipino</option>
+            <option value="japanese">Japanese</option>
+            <option value="chinese">Chinese</option>
+            <option value="american">American</option>
+            <option value="italian">Italian</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label for="placeOfBirth">Place of Birth:</label>
+        <input type="text" id="placeOfBirth" name="placeOfBirth" required><br><br>
+        
+        <label for="religion">Religion:</label>
+        <select id="religion" name="religion" required>
+            <option value="select">Select religion</option>
+            <option value="catholic">Catholic</option>
+            <option value="christian">Christian</option>
+            <option value="inc">Iglesia ni Cristo</option>
+            <option value="islam">Islam</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label for="sex">Gender:</label>
+        <select id="sex" name="sex" required>
+            <option value="select">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        
+        <label for="father">Father's Name:</label>
+        <input type="text" id="father" name="father"><br><br>
+        
+        <label for="mother">Mother's Name:</label>
+        <input type="text" id="mother" name="mother"><br><br>
+        
+        <label for="parentsOccupation">Parent's Occupation:</label>
+        <input type="text" id="parentsOccupation" name="parentsOccupation"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

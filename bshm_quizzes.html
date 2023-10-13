@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BS Hospitality Management Quizzes</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom left, #333, #000) no-repeat fixed;
+            background-size: 100% 100%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        form {
+            width: 700px;
+            background: linear-gradient(to bottom left, #111, #000);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 5px;
+            text-align: left;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        #submitBtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        .modal-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #21262e;
+            color: #fff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px; 
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bachelor of Science in Hospitality Management</h2>
+
+    <form id="quizForm">
+        <h4>Question 1: What does the acronym "CRM" stand for in the context of hospitality management?</h4>
+        <label>
+            <input type="radio" name="q1" value="A"> A.) Customer Relationship Management
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="B"> B.) Cash Register Management
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="C"> C.) Cost Reduction Management
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="D"> D.) Customer Review Management
+        </label><br><br>
+
+        <h4>Question 2: What does the "front of the house" refer to in a hospitality establishment?</h4>
+        <label>
+            <input type="radio" name="q2" value="A"> A.) The area where customers are served
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="B"> B.) The back office and administrative areas
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="C"> C.) The kitchen and food preparation area
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="D"> D.) The housekeeping and cleaning department
+        </label><br><br>
+
+        <h4>Question 3: What is the primary goal of revenue management in hospitality?</h4>
+        <label>
+            <input type="radio" name="q3" value="A"> A.) Maximizing profit by optimizing pricing and availability
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="B"> B.) Minimizing expenses and operational costs
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="C"> C.) Ensuring high employee satisfaction
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="D"> D.) Providing exceptional customer service
+        </label><br><br>
+
+        <h4>Question 4: What is the term for a document that outlines the terms and conditions of a guest's stay in a hotel or other accommodation?</h4>
+        <label>
+            <input type="radio" name="q4" value="A"> A.) Reservation confirmation
+        </label><br>
+        <label>
+            <input type="radio" name="q4" value="B"> B.) Guest feedback form
+        </label><br>
+        <label>
+            <input type="radio" name="q4" value="C"> C.) Guest registration card
+        </label><br>
+        <label>
+            <input type="radio" name="q4" value="D"> D.) Hospitality contract
+        </label><br><br>
+
+        <h4>Question 5: What is the term for a guest who has already stayed at the same hotel at least once before?</h4>
+        <label>
+            <input type="radio" name="q5" value="A"> A.) Repeat guest
+        </label><br>
+        <label>
+            <input type="radio" name="q5" value="B"> B.) New guest
+        </label><br>
+        <label>
+            <input type="radio" name="q5" value="C"> C.) Occasional guest
+        </label><br>
+        <label>
+            <input type="radio" name="q5" value="D"> D.) Check-out guest
+        </label><br><br>
+
+        <h4>Question 6: In the context of food and beverage management, what is "FOH" an acronym for?</h4>
+        <label>
+            <input type="radio" name="q6" value="A"> A.) Front of House
+        </label><br>
+        <label>
+            <input type="radio" name="q6" value="B"> B.) Fast Order Handling
+        </label><br>
+        <label>
+            <input type="radio" name="q6" value="C"> C.) Food Ordering Hub
+        </label><br>
+        <label>
+            <input type="radio" name="q6" value="D"> D.) Food on Hand
+        </label><br><br>
+
+        <h4>Question 7: What is the term for a system that enables guests to check in and out of a hotel without the need for staff assistance?</h4>
+        <label>
+            <input type="radio" name="q7" value="A"> A.) Automated check-in
+        </label><br>
+        <label>
+            <input type="radio" name="q7" value="B"> B.) Manual check-in
+        </label><br>
+        <label>
+            <input type="radio" name="q7" value="C"> C.) Reception check-in
+        </label><br>
+        <label>
+            <input type="radio" name="q7" value="D"> D.) Guest greeting
+        </label><br><br>
+
+        <h4>Question 8: What is the term for the process of designing and arranging the physical environment to meet the needs and preferences of customers?</h4>
+        <label>
+            <input type="radio" name="q8" value="A"> A.) Interior design
+        </label><br>
+        <label>
+            <input type="radio" name="q8" value="B"> B.) Facility management
+        </label><br>
+        <label>
+            <input type="radio" name="q8" value="C"> C.) Guest experience design
+        </label><br>
+        <label>
+            <input type="radio" name="q8" value="D"> D.) Operations management
+        </label><br><br>
+
+        <h4>Question 9: What is the term for the practice of providing guests with high-quality amenities and services to enhance their overall experience?</h4>
+        <label>
+            <input type="radio" name="q9" value="A"> A.) Luxury service
+        </label><br>
+        <label>
+            <input type="radio" name="q9" value="B"> B.) Basic service
+        </label><br>
+        <label>
+            <input type="radio" name="q9" value="C"> C.) Hospitality service
+        </label><br>
+        <label>
+            <input type="radio" name="q9" value="D"> D.) Economy service
+        </label><br><br>
+
+        <h4>Question 10: In the context of hospitality management, what is the "yield" in revenue management?</h4>
+        <label>
+            <input type="radio" name="q10" value="A"> A.) The total revenue generated from all guests
+        </label><br>
+        <label>
+            <input type="radio" name="q10" value="B"> B.) The total number of rooms available in a hotel
+        </label><br>
+        <label>
+            <input type="radio" name="q10" value="C"> C.) The ratio of actual revenue to potential revenue
+        </label><br>
+        <label>
+            <input type="radio" name="q10" value="D"> D.) The average spending of guests in a hotel restaurant
+        </label><br><br>
+
+        <input type="button" value="Submit" id="submitBtn">
+    </form>
+
+    <div class="modal-container" id="alertBox">
+        <span class="close-btn" id="closeBtn" onclick="closeAlert()">&times;</span>
+        <div id="alertText"></div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById("quizForm");
+        const submitBtn = document.getElementById("submitBtn");
+        const alertBox = document.getElementById("alertBox");
+        const alertText = document.getElementById("alertText");
+
+        submitBtn.addEventListener("click", function () {
+        const correctAnswers = {
+            q1: "A",
+            q2: "A",
+            q3: "A",
+            q4: "C",
+            q5: "A",
+            q6: "A",
+            q7: "A",
+            q8: "C",
+            q9: "A",
+            q10: "C"
+        };
+
+        let score = 0;
+    
+    for (let i = 1; i <= 10; i++) {
+        const questionName = "q" + i;
+        const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+
+        if (selectedAnswer) {
+            const userAnswer = selectedAnswer.value;
+
+            if (userAnswer === correctAnswers[questionName]) {
+                score++;
+            }
+        }
+    }
+
+    alertText.innerHTML = `You got ${score} out of 10 correct answers.`;
+    alertBox.style.display = "block";
+});
+
+function closeAlert() {
+    alertBox.style.display = "none";
+}
+</script>
+</body>
+</html>

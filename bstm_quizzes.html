@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BS Tourism Management Quizzes</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom left, #333, #000) no-repeat fixed;
+            background-size: 100% 100%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        form {
+            width: 700px;
+            background: linear-gradient(to bottom left, #111, #000);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 5px;
+            text-align: left;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        #submitBtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        .modal-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #21262e;
+            color: #fff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 24px; 
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Bachelor of Science in Tourism Management</h2>
+
+    <form id="quizForm">
+        <h4>Question 1: What is the primary goal of tourism management?</h4>
+        <label>
+            <input type="radio" name="q1" value="A"> A.) Promoting tourism for economic growth
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="B"> B.) Preserving natural and cultural resources
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="C"> C.) Maximizing profits for travel agencies
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="D"> D.) Encouraging tourists to spend more money
+        </label><br><br>
+
+        <h4>Question 2: What is a "tourist destination" in the context of tourism management?</h4>
+        <label>
+            <input type="radio" name="q2" value="A"> A.) A place where tourists originate
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="B"> B.) A location where tourists visit for leisure or business
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="C"> C.) A mode of transportation for tourists
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="D"> D.) A tourism agency that organizes trips
+        </label><br><br>
+
+        <h4>Question 3: What is ecotourism focused on in tourism management?</h4>
+        <label>
+            <input type="radio" name="q3" value="A"> A.) Sustainable and responsible travel that minimizes the negative impact on natural environments
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="B"> B.) Luxury travel experiences for high-end tourists
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="C"> C.) Adventure travel with extreme sports
+        </label><br>
+        <label>
+            <input type="radio" name="q3" value="D"> D.) Mass tourism with large tour groups
+        </label><br><br>
+
+        <h4>Question 4: What is the term for the process of planning and organizing travel for individuals or groups?</h4>
+        <label>
+            <input type="radio" name="q4" value="A"> A.) Travel promotion
+        </label><br>
+        <label>
+            <input type="radio" name="q4" value="B"> B.) Tourist attraction management
+        </label><br>
+        <label>
+            <input type="radio" name="q4" value="C"> C.) Tour operation
+        </label><br>
+        <label>
+            <input type="radio" name="q4" value="D"> D.) Event planning
+        </label><br><br>
+
+        <h4>Question 5: What is the term for the revenue generated by tourists in a destination?</h4>
+        <label>
+            <input type="radio" name="q5" value="A"> A.) Tourism income
+        </label><br>
+        <label>
+            <input type="radio" name="q5" value="B"> B.) GDP
+        </label><br>
+        <label>
+            <input type="radio" name="q5" value="C"> C.) Exchange rate
+        </label><br>
+        <label>
+            <input type="radio" name="q5" value="D"> D.) Destination costs
+        </label><br><br>
+
+        <h4>Question 6: What does "DMO" stand for in tourism management?</h4>
+        <label>
+            <input type="radio" name="q6" value="A"> A.) Destination Management Organization
+        </label><br>
+        <label>
+            <input type="radio" name="q6" value="B"> B.) Departure Mode Operator
+        </label><br>
+        <label>
+            <input type="radio" name="q6" value="C"> C.) Discounted Meal Offer
+        </label><br>
+        <label>
+            <input type="radio" name="q6" value="D"> D.) Domestic Market Outlook
+        </label><br><br>
+
+        <h4>Question 7: In tourism management, what does "F&B" typically refer to?</h4>
+        <label>
+            <input type="radio" name="q7" value="A"> A.) Food and Beverage
+        </label><br>
+        <label>
+            <input type="radio" name="q7" value="B"> B.) Flights and Baggage
+        </label><br>
+        <label>
+            <input type="radio" name="q7" value="C"> C.) Festivals and Bands
+        </label><br>
+        <label>
+            <input type="radio" name="q7" value="D"> D.) Front and Back office
+        </label><br><br>
+
+        <h4>Question 8: What is the term for the practice of promoting tourism within a specific region or destination?</h4>
+        <label>
+            <input type="radio" name="q8" value="A"> A.) Destination marketing
+        </label><br>
+        <label>
+            <input type="radio" name="q8" value="B"> B.) Tourist attraction management
+        </label><br>
+        <label>
+            <input type="radio" name="q8" value="C"> C.) Hospitality services
+        </label><br>
+        <label>
+            <input type="radio" name="q8" value="D"> D.) Sustainable tourism
+        </label><br><br>
+
+        <h4>Question 9: In tourism management, what does "FIT" stand for?</h4>
+        <label>
+            <input type="radio" name="q9" value="A"> A.) Free Independent Traveler
+        </label><br>
+        <label>
+            <input type="radio" name="q9" value="B"> B.) Fully Inclusive Tour
+        </label><br>
+        <label>
+            <input type="radio" name="q9" value="C"> C.) Flexible Itinerary Travel
+        </label><br>
+        <label>
+            <input type="radio" name="q9" value="D"> D.) Fast International Transportation
+        </label><br><br>
+
+        <h4>Question 10: What is the term for a fee charged to tourists when
+        </h4>
+        <label>
+        <input type="radio" name="q10" value="A"> A.) Tourist tax
+        </label><br>
+        <label>
+        <input type="radio" name="q10" value="B"> B.) Hotel tax
+        </label><br>
+        <label>
+        <input type="radio" name="q10" value="C"> C.) Airfare tax
+        </label><br>
+        <label>
+        <input type="radio" name="q10" value="D"> D.) Travel insurance fee
+        </label><br><br>    
+        
+        <input type="button" value="Submit" id="submitBtn">
+    </form>
+    
+    <div class="modal-container" id="alertBox">
+        <span class="close-btn" id="closeBtn" onclick="closeAlert()">&times;</span>
+        <div id="alertText"></div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById("quizForm");
+        const submitBtn = document.getElementById("submitBtn");
+        const alertBox = document.getElementById("alertBox");
+        const alertText = document.getElementById("alertText");
+
+        submitBtn.addEventListener("click", function () {
+        const correctAnswers = {
+            q1: "B",
+            q2: "B",
+            q3: "A",
+            q4: "C",
+            q5: "A",
+            q6: "A",
+            q7: "A",
+            q8: "A",
+            q9: "A",
+            q10: "A"
+        };
+    
+        let score = 0;
+    
+    for (let i = 1; i <= 10; i++) {
+        const questionName = "q" + i;
+        const selectedAnswer = document.querySelector(`input[name="${questionName}"]:checked`);
+
+        if (selectedAnswer) {
+            const userAnswer = selectedAnswer.value;
+
+            if (userAnswer === correctAnswers[questionName]) {
+                score++;
+            }
+        }
+    }
+
+    alertText.innerHTML = `You got ${score} out of 10 correct answers.`;
+    alertBox.style.display = "block";
+});
+
+function closeAlert() {
+    alertBox.style.display = "none";
+}
+</script>
+</body>
+</html> 
